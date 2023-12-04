@@ -1,0 +1,49 @@
+{
+	"data": [
+		{
+			"name": "Andre",
+			"gender": "Male",
+			"age": 31,
+			"active": true,
+			"wallet": 12500,
+			"arsenal": 15,
+			"codename": "YMB76"
+		},
+		{
+			"name": "Sophia",
+			"gender": "Female",
+			"age": 28,
+			"active": true,
+			"wallet": 11000,
+			"arsenal": 12,
+			"codename": "BZC22"
+		},
+		{
+			"name": "Ethan",
+			"gender": "Male",
+			"age": 25,
+			"active": false,
+			"wallet": 9500,
+			"arsenal": 8,
+			"codename": "PLR09"
+		},
+		{
+			"name": "Olivia",
+			"gender": "Female",
+			"age": 33,
+			"active": true,
+			"wallet": 13000,
+			"arsenal": 17,
+			"codename": "XWK34"
+		},
+		{
+			"name": "Liam",
+			"gender": "Male",
+			"age": 29,
+			"active": true,
+			"wallet": 11500,
+			"arsenal": 13,
+			"codename": "RFD55"
+		}
+	]
+}

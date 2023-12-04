@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing Page</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="./public/images/favicon-32x32.png">
+
+  <!-- IMPORT FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Condensed&display=swap"
+    rel="stylesheet">
+
+  <!-- IMPORT CSS -->
+  <!-- bootstrap 5.3.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- datatable -->
+  <link href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css" rel="stylesheet">
+  <!-- custom styles -->
+  <link rel="stylesheet" href="public/styles/custom-style.css">
+
+  <!-- IMPORT JS -->
+  <!-- jquery 3.7.1 -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- jquery ui 1.13.2 -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+    integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+  <!-- bootstrap 5.3.2 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- datatable -->
+  <script type="text/javascript" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="public/scripts/custom-script.js"></script>
+</head>
+
+<body>
+
+  <div class="loading">
+    <span class="loader"></span>
+  </div>
+
+  <img class="cover-image"></img>
+
+  <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Appname</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" onclick="navigate('pages/templates/internal')">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="navigate('pages/templates/external')">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" onclick="navigate('pages/templates/datatable')">Menu Numero Uno</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Menu Dis</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Menu Trier</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content-container">
+    <div id="content">
+      <div class="row g-2">
+        <div class="col-12">
+          <div class="panel">
+            <div class="title">Changelog
+              <div class="subtitle">From Contributor</div>
+            </div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, necessitatibus quod? Libero repellendus sunt
+            consequuntur saepe, eligendi quidem neque facere, molestiae, iure officia impedit recusandae totam
+            praesentium deserunt distinctio dolore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, nam
+            incidunt beatae officiis quisquam eaque sapiente nemo repudiandae natus magni aperiam aliquam recusandae
+            labore cum modi asperiores laudantium inventore aut? Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Quaerat earum sint temporibus mollitia. Ea, architecto cupiditate fugiat nihil nam, ipsum dolor
+            adipisci dolores enim at inventore totam laboriosam! Nemo, accusantium? Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Voluptatibus quaerat dolore iure fuga rem eligendi quod consectetur odit eos.
+            Fugit atque nam dolor, eaque non quo explicabo suscipit doloribus reprehenderit?
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<a href="freepik.com" target="_blank" class="attribution-footer">Background Image provided by Freepik.com</a>
+
+<script>
+  $(document).ready(function () {
+    // on ready calls
+  })
+</script>
+
+</html>

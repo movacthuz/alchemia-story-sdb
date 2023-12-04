@@ -1,0 +1,110 @@
+<div class="row g-3">
+  <div class="col-12">
+    <div class="panel">
+      <div class="title">
+        Testing Datatable
+        <div class="subtitle">Without Server-side Requests</div>
+      </div>
+      <table id="datatable" class="table table-hover table-bordered table-theme-dark">
+        <thead>
+          <tr>
+            <th class="text-center">Name</th>
+            <th class="text-center">Gender</th>
+            <th class="text-center">Age</th>
+            <th class="text-center">Active</th>
+            <th class="text-center">Wallet</th>
+            <th class="text-center">Arsenal</th>
+            <th class="text-center">Codename</th>
+          </tr>
+        </thead>
+        <tbody id="tbody_data"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    var arrayData = [];
+    var nama_variable_datatable = $("#datatable").DataTable({
+      responsive: true,
+      processing: true,
+      serverSide: false,
+      orderCellsTop: true,
+      dom: '<"row g-2"' +
+        '<"col-12 col-sm-6"l><"col-12 col-sm-6"f>' +
+        '<"col-12"tr>' +
+        '<"col-12 col-sm-6"i><"col-12 col-sm-6"p>' +
+        '>',
+      /* set kolom yang di sortir secara default */
+      order: [
+        [0, "asc"],
+      ],
+      /* set placeholder dari input search */
+      language: {
+        searchPlaceholder: "Keyword..."
+      },
+      ajax: 'datasets/example_001.json',
+      /* Sesuaikan jumlah kolom dengan id table yang digunakan */
+      columns: [{
+        data: 'name',
+        orderable: true,
+        className: '',
+        createdCell: function (td, cellData, rowData, row, col) {
+          $(td).html('<div class="text-center">' + cellData + '</div>');
+        }
+      },
+      {
+        data: 'gender',
+        orderable: true,
+        className: '',
+        createdCell: function (td, cellData, rowData, row, col) {
+          $(td).html('<div class="text-center">' + cellData + '</div>');
+        }
+      },
+      {
+        data: 'age',
+        orderable: true,
+        className: '',
+        createdCell: function (td, cellData, rowData, row, col) {
+          $(td).html('<div class="text-center">' + cellData + '</div>');
+        }
+      },
+      {
+        data: 'active',
+        orderable: true,
+        className: '',
+        createdCell: function (td, cellData, rowData, row, col) {
+          $(td).html('<div class="text-center">' + cellData + '</div>');
+        }
+      },
+      {
+        data: 'wallet',
+        orderable: true,
+        className: '',
+        createdCell: function (td, cellData, rowData, row, col) {
+          $(td).html('<div class="text-center">' + cellData + '</div>');
+        }
+      },
+      {
+        data: 'arsenal',
+        orderable: true,
+        className: '',
+        createdCell: function (td, cellData, rowData, row, col) {
+          $(td).html('<div class="text-center">' + cellData + '</div>');
+        }
+      },
+      {
+        data: 'codename',
+        orderable: true,
+        className: '',
+        createdCell: function (td, cellData, rowData, row, col) {
+          $(td).html('<div class="text-center">' + cellData + '</div>');
+        }
+      },
+      ],
+      /* Lakukan fungsi callback pada bracket ini */
+      drawCallback: function (settings) {
+        /* parameter callback untuk kostumisasi fungsi */
+      }
+    });
+  </script>
+</div>
